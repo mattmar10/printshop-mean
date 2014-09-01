@@ -1,0 +1,79 @@
+body {
+	background: url('../images/pattern_white.jpg') repeat scroll 0% 0% transparent;
+	/*font-family: 'Josefin Slab', serif;*/
+}
+
+a, a:visited {
+    color: #9F9432;
+    text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+
+ #navbar {
+    margin:0;
+    padding:0;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+ }
+ 
+ #navbar li {
+    display:inline-block;
+    padding:0;
+    margin:0;
+ }
+
+ #navbar li  a{
+ 	display: block;
+	padding: 15px 1em 0px;
+ }
+
+
+.outer-wrapper{
+	padding: 50px;
+    width: 75%;
+    margin: 0px auto;
+    position: relative;
+    background: white;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+}
+
+.header{
+	text-align: center;
+
+}
+
+.header a, #mobile-header h1 a {
+    color: #343434;
+}
+
+
+.title{
+	font-weight: 700;
+	font-size: 55px;
+}
+
+#grid{
+	padding-top: 15px;
+
+}
+
+#footer{
+	text-align: center;
+	border-top: 1px solid #ccc;
+	padding-top:15px;
+}
+
+/* bootstrap override */
+.thumbnail{
+	border: none;
+}
+
+
