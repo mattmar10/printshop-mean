@@ -1,0 +1,20 @@
+<section data-ng-controller="PrintsController" data-ng-init="find()">
+	<div class="page-header">
+		<h1>Prints</h1>
+	</div>
+	<div class="list-group">
+		<a data-ng-repeat="print in prints" data-ng-href="#!/prints/{{print._id}}" class="list-group-item">
+			<small class="list-group-item-text">
+				Posted on
+				<span data-ng-bind="print.created | date:'mediumDate'"></span>
+				by
+				<span data-ng-bind="print.user.displayName"></span>
+			</small>
+			<h4 class="list-group-item-heading" data-ng-bind="print.title"></h4>
+			<p class="list-group-item-text" data-ng-bind="print.content"></p>
+		</a>
+	</div>
+	<div class="alert alert-warning text-center" data-ng-if="prints.$resolved && !prints.length">
+		No prints yet, why don't you <a href="/#!/prints/create">create one</a>?
+	</div>
+</section>
